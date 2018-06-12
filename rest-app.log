@@ -1,0 +1,96 @@
+2018-06-12 14:55:42.538  INFO 22368 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 22368 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-12 14:55:42.538 DEBUG 22368 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-12 14:55:42.538  INFO 22368 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-12 14:55:44.747  INFO 22368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-12 14:55:44.747  INFO 22368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-12 14:55:44.841  INFO 22368 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-12 14:55:46.137  INFO 22368 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 3.865 seconds (JVM running for 4.471)
+2018-06-12 14:55:57.168  INFO 22368 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-12 14:55:57.236 DEBUG 22368 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 14:55:57.237 DEBUG 22368 --- [http-nio-8080-exec-1] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 14:55:58.164 DEBUG 22368 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 14:55:58.166 DEBUG 22368 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:01:46.451 DEBUG 22368 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:01:46.452 DEBUG 22368 --- [http-nio-8080-exec-5] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:01:47.314 DEBUG 22368 --- [http-nio-8080-exec-6] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:01:47.315 DEBUG 22368 --- [http-nio-8080-exec-6] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:01:47.952 DEBUG 22368 --- [http-nio-8080-exec-7] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:01:47.952 DEBUG 22368 --- [http-nio-8080-exec-7] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:01:48.514 DEBUG 22368 --- [http-nio-8080-exec-8] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:01:48.514 DEBUG 22368 --- [http-nio-8080-exec-8] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:01:49.393 DEBUG 22368 --- [http-nio-8080-exec-9] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:01:49.394 DEBUG 22368 --- [http-nio-8080-exec-9] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:01:50.272 DEBUG 22368 --- [http-nio-8080-exec-10] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:01:50.273 DEBUG 22368 --- [http-nio-8080-exec-10] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:02:03.244 DEBUG 22368 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:02:03.245 DEBUG 22368 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:02:10.564  INFO 22368 --- [http-nio-8080-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:428) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:687) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+
+2018-06-12 15:02:10.565  INFO 22368 --- [http-nio-8080-exec-4] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:428) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:687) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+
+2018-06-12 15:02:19.653 DEBUG 22368 --- [http-nio-8080-exec-8] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:02:19.655 DEBUG 22368 --- [http-nio-8080-exec-8] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:05:45.940 DEBUG 22368 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:05:45.940 DEBUG 22368 --- [http-nio-8080-exec-1] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:06:55.419  INFO 23508 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 23508 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-12 15:06:55.419 DEBUG 23508 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-12 15:06:55.419  INFO 23508 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-12 15:06:58.081  INFO 23508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-12 15:06:58.097  INFO 23508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-12 15:06:58.206  INFO 23508 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-12 15:06:59.612  INFO 23508 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 4.505 seconds (JVM running for 5.235)
+2018-06-12 15:07:03.710  INFO 23508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-12 15:07:03.774 DEBUG 23508 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:07:03.775 DEBUG 23508 --- [http-nio-8080-exec-1] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:07:08.225 DEBUG 23508 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-12 15:07:08.226 DEBUG 23508 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-12 15:07:14.304 DEBUG 23508 --- [http-nio-8080-exec-4] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:07:14.305 DEBUG 23508 --- [http-nio-8080-exec-4] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:07:22.273 DEBUG 23508 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : getFilmsByAnno() called
+2018-06-12 15:07:22.274 DEBUG 23508 --- [http-nio-8080-exec-5] i.n.a.realspring.services.FilmService    : findByAnno() called
+2018-06-12 15:07:25.617 DEBUG 23508 --- [http-nio-8080-exec-7] i.n.a.r.controllers.FilmController       : getFilmsByAnno() called
+2018-06-12 15:07:25.618 DEBUG 23508 --- [http-nio-8080-exec-7] i.n.a.realspring.services.FilmService    : findByAnno() called
+2018-06-12 15:07:28.620 DEBUG 23508 --- [http-nio-8080-exec-8] i.n.a.r.controllers.FilmController       : getFilmsByAnno() called
+2018-06-12 15:07:28.621 DEBUG 23508 --- [http-nio-8080-exec-8] i.n.a.realspring.services.FilmService    : findByAnno() called
+2018-06-12 15:07:47.567 DEBUG 23508 --- [http-nio-8080-exec-10] i.n.a.r.controllers.FilmController       : getFilmsByAnno() called
+2018-06-12 15:07:47.568 DEBUG 23508 --- [http-nio-8080-exec-10] i.n.a.realspring.services.FilmService    : findByAnno() called
+2018-06-12 15:07:53.895 DEBUG 23508 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:07:53.898 DEBUG 23508 --- [http-nio-8080-exec-1] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:08:17.166 DEBUG 23508 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : getFilmById() called
+2018-06-12 15:08:17.168 DEBUG 23508 --- [http-nio-8080-exec-5] i.n.a.realspring.services.FilmService    : findById() called
+2018-06-12 15:08:29.904 DEBUG 23508 --- [http-nio-8080-exec-7] i.n.a.r.controllers.FilmController       : getFilmById() called
+2018-06-12 15:08:29.905 DEBUG 23508 --- [http-nio-8080-exec-7] i.n.a.realspring.services.FilmService    : findById() called
+2018-06-12 15:08:32.638 DEBUG 23508 --- [http-nio-8080-exec-8] i.n.a.r.controllers.FilmController       : getFilmById() called
+2018-06-12 15:08:32.639 DEBUG 23508 --- [http-nio-8080-exec-8] i.n.a.realspring.services.FilmService    : findById() called
+2018-06-12 15:08:41.602 DEBUG 23508 --- [http-nio-8080-exec-10] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:08:41.603 DEBUG 23508 --- [http-nio-8080-exec-10] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:08:57.283 DEBUG 23508 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-12 15:08:57.285 DEBUG 23508 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-12 15:09:04.112 DEBUG 23508 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : getFilmsByRegista() called
+2018-06-12 15:09:04.114 DEBUG 23508 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : findByRegista() called
