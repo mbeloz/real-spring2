@@ -62,4 +62,21 @@ public class FilmService {
         logger.debug("findByAnno() called");
         return this.videoteca.stream().filter(f -> f.getAnno() == anno).collect(Collectors.toList());
     }
+
+    public Film add(Film film) {
+        if (film != null && film.getId() == 0 && film.getTitolo() != null && film.getTitolo().length() > 0) {
+            long maxId = videoteca.stream()
+                    .max((f1, f2) -> (int) (f1.getId() - f2.getId()))
+                    .get().getId();
+            film.setId(++maxId);
+
+            //memorizzo il nuovo film
+            videoteca.add(film);
+            logger.debug("add() returns: " + film);
+            return film;
+        } else {
+            logger.debug("add() returns an empty film.");
+            return new Film();
+        }
+    }
 }   //end class

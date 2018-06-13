@@ -94,3 +94,84 @@ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP
 2018-06-12 15:08:57.285 DEBUG 23508 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : findByTitolo() called
 2018-06-12 15:09:04.112 DEBUG 23508 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : getFilmsByRegista() called
 2018-06-12 15:09:04.114 DEBUG 23508 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : findByRegista() called
+2018-06-13 10:22:28.299  INFO 24456 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 24456 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-13 10:22:28.302 DEBUG 24456 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 10:22:28.302  INFO 24456 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 10:22:31.182  INFO 24456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 10:22:31.186  INFO 24456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 10:22:31.333  INFO 24456 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 10:22:33.026  INFO 24456 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 5.153 seconds (JVM running for 5.739)
+2018-06-13 10:25:22.345  INFO 24456 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 10:25:22.398 DEBUG 24456 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 10:25:22.400 DEBUG 24456 --- [http-nio-8080-exec-1] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 10:25:58.683 DEBUG 24456 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : getFilmById() called
+2018-06-13 10:25:58.684 DEBUG 24456 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : findById() called
+2018-06-13 10:29:53.049 DEBUG 24456 --- [http-nio-8080-exec-6] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 10:29:53.049 DEBUG 24456 --- [http-nio-8080-exec-6] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 10:31:23.924 DEBUG 24456 --- [http-nio-8080-exec-10] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 10:31:23.924 DEBUG 24456 --- [http-nio-8080-exec-10] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 10:34:21.588  INFO 24728 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 24728 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-13 10:34:21.589 DEBUG 24728 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 10:34:21.590  INFO 24728 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 10:34:24.295  INFO 24728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 10:34:24.296  INFO 24728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 10:34:24.447  INFO 24728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 10:34:27.005  INFO 24728 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 5.724 seconds (JVM running for 6.405)
+2018-06-13 10:34:27.568  INFO 24728 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 10:34:27.624 DEBUG 24728 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getFilmById() called
+2018-06-13 10:34:27.625 DEBUG 24728 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : findById() called
+2018-06-13 10:34:37.666  WARN 24728 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-06-13 10:34:37.667  WARN 24728 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2018-06-13 10:34:50.795 DEBUG 24728 --- [http-nio-8080-exec-4] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=null, regista=null, anno=0)
+2018-06-13 10:39:53.100  INFO 28624 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 28624 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-13 10:39:53.101 DEBUG 28624 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 10:39:53.101  INFO 28624 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 10:39:55.841  INFO 28624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 10:39:55.844  INFO 28624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 10:39:55.999  INFO 28624 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 10:39:58.382  INFO 28624 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 5.592 seconds (JVM running for 6.352)
+2018-06-13 10:40:00.875  INFO 28624 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 10:40:00.921 DEBUG 28624 --- [http-nio-8080-exec-10] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 10:40:00.923 DEBUG 28624 --- [http-nio-8080-exec-10] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 10:40:18.505 DEBUG 28624 --- [http-nio-8080-exec-8] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=null, regista=null, anno=0)
+2018-06-13 10:42:42.388 DEBUG 28624 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=null, regista=null, anno=0)
+2018-06-13 10:43:20.381  INFO 7860 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 7860 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-13 10:43:20.381 DEBUG 7860 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 10:43:20.382  INFO 7860 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 10:43:23.212  INFO 7860 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 10:43:23.213  INFO 7860 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 10:43:23.342  INFO 7860 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 10:43:25.450  INFO 7860 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 5.381 seconds (JVM running for 6.086)
+2018-06-13 10:43:25.826  INFO 7860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 10:43:25.920 DEBUG 7860 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=null, regista=null, anno=0)
+2018-06-13 10:43:25.926 DEBUG 7860 --- [http-nio-8080-exec-1] i.n.a.realspring.services.FilmService    : add() returns an empty film.
+2018-06-13 10:47:50.685  INFO 25188 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 25188 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-13 10:47:50.686 DEBUG 25188 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 10:47:50.687  INFO 25188 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 10:47:53.318  INFO 25188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 10:47:53.320  INFO 25188 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 10:47:53.434  INFO 25188 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 10:47:55.001  INFO 25188 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 4.736 seconds (JVM running for 5.502)
+2018-06-13 10:48:04.210  INFO 25188 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 10:48:04.258 DEBUG 25188 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 10:48:04.259 DEBUG 25188 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 10:48:10.468 DEBUG 25188 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:48:10.474 DEBUG 25188 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : add() returns: Film(id=9, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:48:21.305 DEBUG 25188 --- [http-nio-8080-exec-4] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:48:21.306 DEBUG 25188 --- [http-nio-8080-exec-4] i.n.a.realspring.services.FilmService    : add() returns: Film(id=10, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:49:06.376 DEBUG 25188 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 10:49:06.376 DEBUG 25188 --- [http-nio-8080-exec-5] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 10:50:19.211  WARN 25188 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Can not deserialize instance of it.nextre.academy.realspring.models.Film out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of it.nextre.academy.realspring.models.Film out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@96e6e6e; line: 1, column: 1]
+2018-06-13 10:50:19.212  WARN 25188 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Can not deserialize instance of it.nextre.academy.realspring.models.Film out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of it.nextre.academy.realspring.models.Film out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@96e6e6e; line: 1, column: 1]
+2018-06-13 10:50:36.364 DEBUG 25188 --- [http-nio-8080-exec-10] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:50:36.365 DEBUG 25188 --- [http-nio-8080-exec-10] i.n.a.realspring.services.FilmService    : add() returns: Film(id=11, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:50:45.563 DEBUG 25188 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:50:45.564 DEBUG 25188 --- [http-nio-8080-exec-1] i.n.a.realspring.services.FilmService    : add() returns: Film(id=12, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:50:46.946 DEBUG 25188 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:50:46.947 DEBUG 25188 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : add() returns: Film(id=13, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:50:47.640 DEBUG 25188 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:50:47.640 DEBUG 25188 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : add() returns: Film(id=14, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 10:51:26.321 DEBUG 25188 --- [http-nio-8080-exec-4] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 10:51:26.321 DEBUG 25188 --- [http-nio-8080-exec-4] i.n.a.realspring.services.FilmService    : getAll() called

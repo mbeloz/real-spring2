@@ -4,10 +4,7 @@ import it.nextre.academy.realspring.models.Film;
 import it.nextre.academy.realspring.services.FilmService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,7 +23,7 @@ public class FilmController {
         return filmService.getAll();
     }
 
-    @GetMapping("/id/{idFilm}")
+    @GetMapping({"/{idFilm}", "/id/{idFilm}"})
     public Film getFilmById(@PathVariable("idFilm") Long id) {
         logger.debug("getFilmById() called");
         return id != null ? filmService.findById(id) : null;
@@ -55,6 +52,10 @@ public class FilmController {
         return anno != null ? filmService.findByAnno(anno) : null;
     }
 
-
+    @PostMapping("/")
+    public Film addFilm(@RequestBody Film film) {
+        logger.debug("addFilm() called with film: " + film);
+        return filmService.add(film);
+    }
 
 }   //end class
