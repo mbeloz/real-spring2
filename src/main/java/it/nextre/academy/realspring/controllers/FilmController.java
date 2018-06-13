@@ -58,4 +58,22 @@ public class FilmController {
         return filmService.add(film);
     }
 
+    @PutMapping("/{idFilm}")
+    public Film updateFilm(@RequestBody Film film, @PathVariable("idFilm") long id) {
+        logger.debug("updateFilm() called with film: " + film + "and id: " + id);
+        if (film.getId() == id)
+            return filmService.save(film);
+        else
+            return new Film();
+    }
+
+    @DeleteMapping("/{idFilm}")
+    public boolean deleteFilm(@RequestBody Film film, @PathVariable("idFilm") long id) {
+        logger.debug("deleteFilm() called with film: " + film + "and id: " + id);
+        if (film.getId() == id)
+            return filmService.delete(film);
+        else
+            return false;
+    }
+
 }   //end class

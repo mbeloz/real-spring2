@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -74,9 +75,34 @@ public class FilmService {
             videoteca.add(film);
             logger.debug("add() returns: " + film);
             return film;
-        } else {
-            logger.debug("add() returns an empty film.");
+        }
+        logger.debug("add() returns an empty film.");
+        return new Film();
+    }
+
+    public Film save(Film film) {
+        if (film != null && film.getId() > 0 && film.getTitolo() != null && film.getTitolo().length() > 0) {
+            Optional<Film> op = videoteca.stream().filter(f -> f.getId() == film.getId()).findFirst();
+            if (op.isPresent()) {
+                op.get().setAnno(film.getAnno());
+                op.get().setRegista(film.getRegista());
+                op.get().setTitolo(film.getTitolo());
+                logger.debug("save(): " + op.get());
+                return op.get();
+            }
+            logger.debug("save(): no such element found");
             return new Film();
         }
+        logger.debug("save() returns an empty film.");
+        return new Film();
+    }
+
+    public boolean delete(Film film) {
+        if (film != null && film.getId() > 0) {
+            logger.debug("delete() " + film);
+            return videoteca.removeIf(f -> f.getId() == film.getId());
+        }
+        logger.debug("delete(): Malformed input");
+        return false;
     }
 }   //end class

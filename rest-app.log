@@ -175,3 +175,52 @@ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP
 2018-06-13 10:50:47.640 DEBUG 25188 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : add() returns: Film(id=14, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
 2018-06-13 10:51:26.321 DEBUG 25188 --- [http-nio-8080-exec-4] i.n.a.r.controllers.FilmController       : getAll() (movies) called
 2018-06-13 10:51:26.321 DEBUG 25188 --- [http-nio-8080-exec-4] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 11:13:21.724  INFO 28800 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 28800 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-13 11:13:21.725 DEBUG 28800 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 11:13:21.726  INFO 28800 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 11:13:24.939  INFO 28800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 11:13:24.944  INFO 28800 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 11:13:25.090  INFO 28800 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 11:13:26.788  INFO 28800 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 5.385 seconds (JVM running for 6.031)
+2018-06-13 11:13:26.938  INFO 28800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 11:13:27.000 DEBUG 28800 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 11:13:27.006 DEBUG 28800 --- [http-nio-8080-exec-1] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 11:13:33.404 DEBUG 28800 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 11:13:33.409 DEBUG 28800 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : add() returns: Film(id=9, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 11:15:22.885 DEBUG 28800 --- [http-nio-8080-exec-7] i.n.a.r.controllers.FilmController       : updateFilm() called with film: Film(id=9, titolo=Full Metal Jacket, regista=Stanley Kubrick, anno=1987)and id: 9
+2018-06-13 11:15:22.889 DEBUG 28800 --- [http-nio-8080-exec-7] i.n.a.realspring.services.FilmService    : save(): Film(id=9, titolo=Full Metal Jacket, regista=Stanley Kubrick, anno=1987)
+2018-06-13 11:15:28.616 DEBUG 28800 --- [http-nio-8080-exec-8] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 11:15:28.617 DEBUG 28800 --- [http-nio-8080-exec-8] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 11:15:41.092 DEBUG 28800 --- [http-nio-8080-exec-6] i.n.a.r.controllers.FilmController       : updateFilm() called with film: Film(id=9, titolo=Full Metal Jacket, regista=Stanley Kubrick, anno=1987)and id: 10
+2018-06-13 11:15:57.173 DEBUG 28800 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 11:15:57.173 DEBUG 28800 --- [http-nio-8080-exec-5] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 11:16:33.909 DEBUG 28800 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : updateFilm() called with film: Film(id=9, titolo=Full Metal Jacket, regista=Stanley Kubrick, anno=0)and id: 9
+2018-06-13 11:16:33.910 DEBUG 28800 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : save(): Film(id=9, titolo=Full Metal Jacket, regista=Stanley Kubrick, anno=0)
+2018-06-13 12:01:44.895  INFO 32224 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 32224 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-13 12:01:44.896 DEBUG 32224 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 12:01:44.896  INFO 32224 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 12:01:48.388  INFO 32224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 12:01:48.391  INFO 32224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 12:01:48.592  INFO 32224 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 12:01:51.047  INFO 32224 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 6.425 seconds (JVM running for 7.108)
+2018-06-13 12:02:05.918  INFO 32224 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 12:02:05.998 DEBUG 32224 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 12:02:05.999 DEBUG 32224 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 12:02:17.216 DEBUG 32224 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 12:02:17.224 DEBUG 32224 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : add() returns: Film(id=9, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 12:03:42.727 DEBUG 32224 --- [http-nio-8080-exec-6] i.n.a.r.controllers.FilmController       : deleteFilm() called with film: Film(id=9, titolo=null, regista=null, anno=0)and id: 9
+2018-06-13 12:03:42.728 DEBUG 32224 --- [http-nio-8080-exec-6] i.n.a.realspring.services.FilmService    : delete() Film(id=9, titolo=null, regista=null, anno=0)
+2018-06-13 12:03:49.106 DEBUG 32224 --- [http-nio-8080-exec-7] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 12:03:49.108 DEBUG 32224 --- [http-nio-8080-exec-7] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 12:03:58.221 DEBUG 32224 --- [http-nio-8080-exec-8] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 12:03:58.222 DEBUG 32224 --- [http-nio-8080-exec-8] i.n.a.realspring.services.FilmService    : add() returns: Film(id=9, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 12:04:01.066 DEBUG 32224 --- [http-nio-8080-exec-9] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 12:04:01.067 DEBUG 32224 --- [http-nio-8080-exec-9] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 12:04:06.282 DEBUG 32224 --- [http-nio-8080-exec-10] i.n.a.r.controllers.FilmController       : deleteFilm() called with film: Film(id=9, titolo=null, regista=null, anno=0)and id: 9
+2018-06-13 12:04:06.283 DEBUG 32224 --- [http-nio-8080-exec-10] i.n.a.realspring.services.FilmService    : delete() Film(id=9, titolo=null, regista=null, anno=0)
+2018-06-13 12:04:09.001 DEBUG 32224 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 12:04:09.002 DEBUG 32224 --- [http-nio-8080-exec-1] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 12:05:17.379 DEBUG 32224 --- [http-nio-8080-exec-4] i.n.a.r.controllers.FilmController       : deleteFilm() called with film: Film(id=10, titolo=null, regista=null, anno=0)and id: 9
+2018-06-13 12:05:36.479 DEBUG 32224 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : deleteFilm() called with film: Film(id=0, titolo=null, regista=null, anno=0)and id: 9
+2018-06-13 12:06:14.330 DEBUG 32224 --- [http-nio-8080-exec-6] i.n.a.r.controllers.FilmController       : deleteFilm() called with film: Film(id=0, titolo=null, regista=null, anno=0)and id: 0
+2018-06-13 12:06:14.332 DEBUG 32224 --- [http-nio-8080-exec-6] i.n.a.realspring.services.FilmService    : delete(): Malformed input
