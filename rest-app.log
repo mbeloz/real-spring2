@@ -161,9 +161,9 @@ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP
 2018-06-13 10:48:21.306 DEBUG 25188 --- [http-nio-8080-exec-4] i.n.a.realspring.services.FilmService    : add() returns: Film(id=10, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
 2018-06-13 10:49:06.376 DEBUG 25188 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : getAll() (movies) called
 2018-06-13 10:49:06.376 DEBUG 25188 --- [http-nio-8080-exec-5] i.n.a.realspring.services.FilmService    : getAll() called
-2018-06-13 10:50:19.211  WARN 25188 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Can not deserialize instance of it.nextre.academy.realspring.models.Film out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of it.nextre.academy.realspring.models.Film out of START_ARRAY token
+2018-06-13 10:50:19.211  WARN 25188 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Can not deserialize instance of it.nextre.academy.realspring.entities.Film out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of it.nextre.academy.realspring.entities.Film out of START_ARRAY token
  at [Source: java.io.PushbackInputStream@96e6e6e; line: 1, column: 1]
-2018-06-13 10:50:19.212  WARN 25188 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Can not deserialize instance of it.nextre.academy.realspring.models.Film out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of it.nextre.academy.realspring.models.Film out of START_ARRAY token
+2018-06-13 10:50:19.212  WARN 25188 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Can not deserialize instance of it.nextre.academy.realspring.entities.Film out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of it.nextre.academy.realspring.entities.Film out of START_ARRAY token
  at [Source: java.io.PushbackInputStream@96e6e6e; line: 1, column: 1]
 2018-06-13 10:50:36.364 DEBUG 25188 --- [http-nio-8080-exec-10] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
 2018-06-13 10:50:36.365 DEBUG 25188 --- [http-nio-8080-exec-10] i.n.a.realspring.services.FilmService    : add() returns: Film(id=11, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
@@ -278,3 +278,19 @@ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP
 2018-06-13 13:03:58.491  WARN 32884 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "id"
 2018-06-13 13:04:56.016 DEBUG 32884 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
 2018-06-13 13:04:56.017 DEBUG 32884 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-14 10:48:47.486  INFO 5616 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 5616 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-14 10:48:47.490 DEBUG 5616 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-14 10:48:47.490  INFO 5616 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-14 10:48:50.279  INFO 5616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 10:48:50.280  INFO 5616 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 10:48:50.433  INFO 5616 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-14 10:48:51.026  INFO 5616 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-14 10:48:51.098  INFO 5616 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-14 10:48:51.108  INFO 5616 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-14 10:48:51.108  INFO 5616 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-14 10:48:51.154  INFO 5616 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-14 10:48:51.341  INFO 5616 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-06-14 10:48:51.506  INFO 5616 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-06-14 10:48:52.932  INFO 5616 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 5.769 seconds (JVM running for 6.373)
