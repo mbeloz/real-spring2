@@ -224,3 +224,57 @@ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP
 2018-06-13 12:05:36.479 DEBUG 32224 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : deleteFilm() called with film: Film(id=0, titolo=null, regista=null, anno=0)and id: 9
 2018-06-13 12:06:14.330 DEBUG 32224 --- [http-nio-8080-exec-6] i.n.a.r.controllers.FilmController       : deleteFilm() called with film: Film(id=0, titolo=null, regista=null, anno=0)and id: 0
 2018-06-13 12:06:14.332 DEBUG 32224 --- [http-nio-8080-exec-6] i.n.a.realspring.services.FilmService    : delete(): Malformed input
+2018-06-13 12:27:39.837  INFO 26912 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 26912 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-13 12:27:39.839 DEBUG 26912 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 12:27:39.840  INFO 26912 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 12:27:43.816  INFO 26912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 12:27:43.817  INFO 26912 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 12:27:43.945  INFO 26912 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 12:27:46.382  INFO 26912 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 7.086 seconds (JVM running for 8.111)
+2018-06-13 12:27:47.297  INFO 26912 --- [http-nio-8080-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 12:27:47.367 DEBUG 26912 --- [http-nio-8080-exec-8] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 12:27:47.374 DEBUG 26912 --- [http-nio-8080-exec-8] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 12:59:07.085  INFO 32884 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-D1F0EFH with PID 32884 (C:\Users\NextreNextre\Projects\pr046-realspring\target\classes started by NextreNextre in C:\Users\NextreNextre\Projects\pr046-realspring)
+2018-06-13 12:59:07.086 DEBUG 32884 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 12:59:07.086  INFO 32884 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 12:59:10.101  INFO 32884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 12:59:10.103  INFO 32884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 12:59:10.245  INFO 32884 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 12:59:11.841  INFO 32884 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 5.028 seconds (JVM running for 5.643)
+2018-06-13 12:59:12.279  INFO 32884 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 12:59:12.326 DEBUG 32884 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 12:59:12.327 DEBUG 32884 --- [http-nio-8080-exec-1] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 13:00:03.492 DEBUG 32884 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getFilmById() called
+2018-06-13 13:00:03.492 DEBUG 32884 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : findById() called
+2018-06-13 13:00:07.476 DEBUG 32884 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : getFilmById() called
+2018-06-13 13:00:07.476 DEBUG 32884 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : findById() called
+2018-06-13 13:00:21.728  WARN 32884 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "id"
+2018-06-13 13:00:21.729  WARN 32884 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "id"
+2018-06-13 13:00:40.923 DEBUG 32884 --- [http-nio-8080-exec-6] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-13 13:00:40.923 DEBUG 32884 --- [http-nio-8080-exec-6] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-13 13:00:44.060 DEBUG 32884 --- [http-nio-8080-exec-7] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-13 13:00:44.061 DEBUG 32884 --- [http-nio-8080-exec-7] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-13 13:00:47.218  WARN 32884 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "titolo"
+2018-06-13 13:00:47.219  WARN 32884 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "titolo"
+2018-06-13 13:01:06.760 DEBUG 32884 --- [http-nio-8080-exec-10] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 13:01:06.761 DEBUG 32884 --- [http-nio-8080-exec-10] i.n.a.realspring.services.FilmService    : add() returns: Film(id=9, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 13:01:20.871 DEBUG 32884 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : getAll() (movies) called
+2018-06-13 13:01:20.872 DEBUG 32884 --- [http-nio-8080-exec-1] i.n.a.realspring.services.FilmService    : getAll() called
+2018-06-13 13:02:03.999 DEBUG 32884 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 13:02:03.999 DEBUG 32884 --- [http-nio-8080-exec-2] i.n.a.realspring.services.FilmService    : add() returns: Film(id=10, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 13:02:04.898 DEBUG 32884 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 13:02:04.900 DEBUG 32884 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : add() returns: Film(id=11, titolo=Barry Lyndon, regista=Stanley Kubrick, anno=1975)
+2018-06-13 13:02:24.036 DEBUG 32884 --- [http-nio-8080-exec-4] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=, regista=Stanley Kubrick, anno=1975)
+2018-06-13 13:02:24.036 DEBUG 32884 --- [http-nio-8080-exec-4] i.n.a.realspring.services.FilmService    : add() throws an InvalidArgumentException
+2018-06-13 13:03:14.819  WARN 32884 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "titolo"
+2018-06-13 13:03:14.820  WARN 32884 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "titolo"
+2018-06-13 13:03:31.381 DEBUG 32884 --- [http-nio-8080-exec-8] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-13 13:03:31.382 DEBUG 32884 --- [http-nio-8080-exec-8] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-13 13:03:38.861 DEBUG 32884 --- [http-nio-8080-exec-9] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-13 13:03:38.862 DEBUG 32884 --- [http-nio-8080-exec-9] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-13 13:03:44.880 DEBUG 32884 --- [http-nio-8080-exec-10] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-13 13:03:44.881 DEBUG 32884 --- [http-nio-8080-exec-10] i.n.a.realspring.services.FilmService    : findByTitolo() called
+2018-06-13 13:03:58.490  WARN 32884 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "id"
+2018-06-13 13:03:58.491  WARN 32884 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "id"
+2018-06-13 13:04:56.016 DEBUG 32884 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : getFilmsByTitolo() called
+2018-06-13 13:04:56.017 DEBUG 32884 --- [http-nio-8080-exec-3] i.n.a.realspring.services.FilmService    : findByTitolo() called

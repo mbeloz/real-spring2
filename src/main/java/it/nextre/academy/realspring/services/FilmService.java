@@ -64,7 +64,7 @@ public class FilmService {
         return this.videoteca.stream().filter(f -> f.getAnno() == anno).collect(Collectors.toList());
     }
 
-    public Film add(Film film) {
+    public Film add(Film film) throws Exception {
         if (film != null && film.getId() == 0 && film.getTitolo() != null && film.getTitolo().length() > 0) {
             long maxId = videoteca.stream()
                     .max((f1, f2) -> (int) (f1.getId() - f2.getId()))
@@ -76,8 +76,8 @@ public class FilmService {
             logger.debug("add() returns: " + film);
             return film;
         }
-        logger.debug("add() returns an empty film.");
-        return new Film();
+        logger.debug("add() throws an InvalidArgumentException");
+        throw new Exception("Malformed film data");
     }
 
     public Film save(Film film) {
