@@ -17,7 +17,7 @@ public interface FilmService {
 
     Film add(Film film) throws Exception;
 
-    Film save(Film film);
+    Film save(Film film) throws Exception;
 
-    boolean delete(Film film);
+    boolean delete(Film film) throws Exception;
 }

@@ -6,6 +6,7 @@ import it.nextre.academy.realspring.services.impl.FilmServiceMock;
 import it.nextre.academy.realspring.utils.ResponseHelper;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,8 +16,7 @@ import java.util.List;
 @RequestMapping("/film")
 public class FilmController {
 
-    @Autowired
-    FilmService filmService;
+    @Autowired @Qualifier("implfilm") FilmService filmService;
     @Autowired ResponseHelper responseHelper;
 
     Logger logger = Logger.getLogger(FilmController.class);
@@ -51,15 +51,21 @@ public class FilmController {
     }
 
     @GetMapping("/regista/{regista}")
-    public List<Film> getFilmsByRegista(@PathVariable("regista") String regista) {
+    public ResponseEntity getFilmsByRegista(@PathVariable("regista") String regista) {
         logger.debug("getFilmsByRegista() called");
-        return regista != null && regista.length() > 0 ? filmService.findByRegista(regista) : null;
+        if (regista != null && regista.length() > 0)
+            return responseHelper.ok(filmService.findByRegista(regista));
+        else
+            return responseHelper.badRequest("Invalid input");
     }
 
     @GetMapping("/anno/{anno}")
-    public List<Film> getFilmByAnno(@PathVariable("anno") Integer anno) {
+    public ResponseEntity getFilmByAnno(@PathVariable("anno") Integer anno) {
         logger.debug("getFilmsByAnno() called");
-        return anno != null ? filmService.findByAnno(anno) : null;
+        if (anno != null)
+            return responseHelper.ok(filmService.findByAnno(anno));
+        else
+            return responseHelper.badRequest("Invalid input");
     }
 
     @PostMapping("/")
@@ -73,21 +79,31 @@ public class FilmController {
     }
 
     @PutMapping("/{idFilm}")
-    public Film updateFilm(@RequestBody Film film, @PathVariable("idFilm") long id) {
+    public ResponseEntity updateFilm(@RequestBody Film film, @PathVariable("idFilm") long id) {
         logger.debug("updateFilm() called with film: " + film + "and id: " + id);
-        if (film.getId() == id)
-            return filmService.save(film);
-        else
-            return new Film();
+        if (film.getId() == id) {
+            try {
+                return responseHelper.ok(filmService.save(film));
+            } catch (Exception e) {
+                return responseHelper.badRequest(e.getMessage());
+            }
+        } else {
+            return responseHelper.badRequest("Invalid ID");
+        }
     }
 
     @DeleteMapping("/{idFilm}")
-    public boolean deleteFilm(@RequestBody Film film, @PathVariable("idFilm") long id) {
+    public ResponseEntity deleteFilm(@RequestBody Film film, @PathVariable("idFilm") long id) {
         logger.debug("deleteFilm() called with film: " + film + "and id: " + id);
-        if (film.getId() == id)
-            return filmService.delete(film);
-        else
-            return false;
+        if (film.getId() == id) {
+            try {
+                return responseHelper.ok(filmService.delete(film));
+            } catch (Exception e) {
+                return responseHelper.badRequest(e.getMessage());
+            }
+        } else {
+            return responseHelper.badRequest("Invalid ID");
+        }
     }
 
 }   //end class

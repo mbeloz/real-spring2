@@ -3,6 +3,7 @@ package it.nextre.academy.realspring.services.impl;
 import it.nextre.academy.realspring.entities.Film;
 import it.nextre.academy.realspring.services.FilmService;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
+@Qualifier("mockfilm")
 public class FilmServiceMock implements FilmService {
 
     private List<Film> videoteca = new ArrayList<>();
