@@ -1,8 +1,7 @@
-package it.nextre.academy.realspring.controllers;
+package it.nextre.academy.realspring.controllers.api;
 
 import it.nextre.academy.realspring.entities.Film;
 import it.nextre.academy.realspring.services.FilmService;
-import it.nextre.academy.realspring.services.impl.FilmServiceMock;
 import it.nextre.academy.realspring.utils.ResponseHelper;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +9,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
-@RestController
-@RequestMapping("/film")
+@RestController //RestController = produce oggetti JSON
+@RequestMapping("/api/film")
 public class FilmController {
 
     @Autowired @Qualifier("implfilm") FilmService filmService;
